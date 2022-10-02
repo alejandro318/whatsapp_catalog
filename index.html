@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Catálogo Concord</title>
+		<meta name="description" content="Demo Concord" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Pragmasys" />
+		<link rel="shortcut icon" href="favicon.png"> 
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<script src="js/modernizr.custom.79639.js"></script>
+		
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="fonts/material-icons.min.css">   
+	</head>
+	<body>
+	
+
+
+
+<!--Modal carrito-->
+<div class="modal fade" id="carritoModal" tabindex="-1" role="dialog" aria-labelledby="carritoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carritoModalLabel">Carrito de compras</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<div class="table-responsive">
+						<table class="table">
+								<thead>
+										<tr></tr>
+								</thead>
+								<tbody>
+										<tr >
+												<td>CFUM268</td>
+												<td>Colcha con fundas Orion - Mat</td>
+												<td class="col-3" ><input type="number" value="1" class="col-4" /></td>
+												<td>$559</td>
+										</tr>
+									
+										<tr  >
+												<td>SNOM0053</td>
+												<td>Sabanas Cotton Fresh Azul Rey- Mat</td>
+												<td class="col-3" ><input type="number" value="1" class="col-4" /></td>												
+												<td>$699</td>
+										</tr>
+										<tr  >
+												<td><b>Total</b></td>
+												<td></td>
+												<td></td>
+												<td>$1258</td>
+										</tr>										
+								</tbody>
+						</table>
+					</div>
+      </div>
+      <div class="modal-footer1">
+<!--        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+        <button type="button" id="envia-pedido-wa" class="btn btn-primary" style="background-color:#fe002d; font-size:11px;">Enviar a mi Agente</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Modal carrito-->
+
+<!--Modal item2-->
+<div class="modal fade" id="item2Modal" tabindex="-1" role="dialog" aria-labelledby="item2ModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="item2ModalLabel">Agregar a la lista de pedido</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="table-responsive">
+						<table class="table">
+								<thead>
+										<tr></tr>
+								</thead>
+								<tbody>
+										<tr id='CFUM268' >
+												<td>CFUM268</td>
+												<td>Colcha con fundas Orion - Mat</td>
+												<td>$559</td>
+										</tr>
+										<tr  id='SFUK269'>
+												<td>SFUK269</td>
+												<td>Colcha con fundas Orion - KS</td>
+												<td>$899</td>
+										</tr>
+										<tr  id='SNOM0053'>
+												<td>SNOM0053</td>
+												<td>Sabanas Cotton Fresh Azul Rey- Mat</td>
+												<td>$699</td>
+										</tr>
+								</tbody>
+						</table>
+					</div>
+
+				</div>
+      <div class="modal-footer1">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:#fe002d; font-size:11px;">Close</button>
+      </div>
+			</div>
+		</div>
+
+	
+	</div>	
+<!--Modal item2-->
+
+		<div id="container" class="container2">	
+				
+			<div class="menu-panel">
+				<img src="imgs/logo-concord_2__3.png">
+				<!--<h3>Colchas</h3>-->
+				<ul id="menu-toc" class="menu-toc">
+
+					<li><a href="#item1">Recámara</a></li>
+					<li><a href="#item2">Bebé</a></li>
+					<li><a href="#item3">Comedor</a></li>
+					<li><a href="#item4">Cocina</a></li>
+					<li><a href="#item5">Baño</a></li>					
+				</ul>
+			</div>
+
+			<div class="bb-custom-wrapper">
+				<div id="bb-bookblock" class="bb-bookblock">
+				<nav>
+
+  				<i id="tblcontents" class="fas fa-bars" style="color:#fe002d;font-size:20px;" ></i>
+					<i id="bb-nav-prev" class="fas fa-arrow-circle-left" style="color:#fe002d;"></i>
+					<i id="bb-nav-next" class="fas fa-arrow-circle-right" style="color:#fe002d;"></i>
+					<i  class="fas fa-download" style="color:#fe002d;" id="descarga-catalogo" ></i>					
+					<i  class="fas fa-shopping-cart" style="color:#fe002d;"  data-toggle="modal" data-target="#carritoModal" ></i>
+
+
+				</nav>
+					<div class="bb-item" id="item1">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-001.png">
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="bb-item" id="item2">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-002.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>					
+					</div>
+
+												
+					<div class="bb-item" id="item3">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-003.png">
+								<div  class="catalogo-footer"  data-toggle="modal" data-target="#item2Modal"><i class="material-icons" style="color:#fe002d;font-size:40px;background-position:center;background-size:auto;background-repeat:no-repeat;font-weight:normal;">add_shopping_cart</i></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="bb-item" id="item4">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-004.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>								
+							</div>
+						</div>
+					</div>
+
+					<div class="bb-item" id="item5">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-005.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>
+					</div>						
+					<div class="bb-item" id="item6">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-006.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>						
+					</div>
+					<div class="bb-item" id="item7">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-134.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>						
+					</div>
+					<div class="bb-item" id="item8">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-135.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>						
+					</div>
+					<div class="bb-item" id="item9">
+						<div class="content">
+							<div class="scroller">
+								<img   class="img-fluid d-inline-flex"  src="imgs/catalogo/outputname-136.png">
+                  <div class="catalogo-footer">
+								  	<button class="btn btn-primary active pull-right" type="button" style="background-color:#fe002d; font-size:11px;"  data-toggle="modal" data-target="#item2Modal" ><i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
+								  </div>
+							</div>
+						</div>						
+					</div>		
+					
+																	
+			</div>
+			
+		</div>
+		
+		<!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+			<script>
+			
+			$( "#CFUM268" ).click(function() {
+  			alert( "Producto agregado" );
+
+
+			});
+			$( "#SFUK269" ).click(function() {
+  			alert( "Producto agregado" );
+
+
+			});
+			$( "#SNOM0053" ).click(function() {
+  			alert( "Producto agregado" );
+
+
+			});
+			$( "#envia-pedido-wa" ).click(function() {
+			var prodDPagina="Hola, te mando mi lista de productos que encontré en el catálogo Concord que me gustaría adquirir:\n\nCFUM268	Colcha con fundas Orion - Mat	$559.00\n\nSNOM0053	Sabanas Cotton Fresh Azul Rey- Mat	$699.00\n\nTotal: $1,258.00 \n\n¡Gracias! ";
+			var newwindow=window.open("https://api.whatsapp.com/send?phone=&text="+encodeURI(prodDPagina)+"","Compartir ","height=400,width=500");
+
+
+			});
+			$( "#descarga-catalogo" ).click(function() {
+
+			var newwindow=window.open("CATALOGO_DIGITAL_2020_CONCORD.pdf","Compartir ","height=400,width=500");
+
+
+			});
+			
+			var myModal = $('#myModal').on('shown', function () {
+		  clearTimeout(myModal.data('hideInteval'))
+		  var id = setTimeout(function(){
+		      myModal.modal('hide');
+		  });
+		  myModal.data('hideInteval', id);
+			})
+
+			$(function() {
+
+				Page.init();
+			
+
+			});
+		</script>
+	</body>
+</html>
