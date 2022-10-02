@@ -40,7 +40,7 @@ $concatenated = implode('&', $encoded);
 
 // The API key for the user as generated in the Seller Center GUI.
 // Must be an API key associated with the UserID parameter.
-$api_key = 'd2c690e98958353f905005a3b5153354725e3209';
+$api_key = '';
 
 // Compute signature and add it to the parameters.
 $parameters['Signature'] =
